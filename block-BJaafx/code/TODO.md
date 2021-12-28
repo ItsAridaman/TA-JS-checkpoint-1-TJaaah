@@ -1,5 +1,13 @@
 1. Using loops take 10 inputs from user and find the average of all the numbers.
 
+let summ=0;
+for(let i=1;i<=10;i++)
+{
+  let num=+prompt("enter number");
+  summ += num;
+}
+console.log(summ/10);
+
 2. What will be the output of the code below
 
 ```js
@@ -9,8 +17,13 @@ while (i < 3) {
   i++;
 }
 ```
+error, saying println not defined.
 
 3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
+
+
+
+
 
 4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
 
@@ -19,6 +32,17 @@ while (i < 3) {
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.
 
+function getProductofDigits(num)
+{
+if(num<=0)
+{
+  return `not a valid input`;
+}
+else
+{
+  for ()
+}
+}
 6. What will be the output of the following code below in multiple conditions? Explain with reason?
 
 ```js
@@ -34,9 +58,9 @@ function check(num) {
   return num;
 }
 
-check(10); // output
-check(1); // output
-check(5); // output
+check(10); //  "bigger than 5"
+check(1); // "smaller than 5"
+check(5); // 5
 ```
 
 7. What will be the output of the following code given below? Explain the reason?
@@ -48,9 +72,9 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // 'you are Arya'
+getOutput('John'); // 'you are John'
+getOutput(); // 'who are you'
 ```
 
 8. What will be the output of the following code given below? Explain the reason?
@@ -62,11 +86,14 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // 'you are arya' 'who are you'
+getOutput('John'); // 'you are John' 'who are you'
+getOutput(); //'who are you'
 ```
 
 9. Can a function have multiple return statement? Give one example if possible and explain the reason.
 
+A function can have multiple return statements. When any of them is executed, the function terminates. 
+
 10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
+The difference between for loop and while loop is that in for loop the number of iterations to be done is already known and is used to obtain a certain result whereas in while loop the command runs until a certain condition is reached and the statement is proved to be false.
